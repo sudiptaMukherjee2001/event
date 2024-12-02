@@ -1,54 +1,98 @@
-import React from 'react';
-import './Home.css';
-import { useNavigate } from 'react-router-dom';
+import React from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+import "./Home.css";
+import asset1 from "../../assets/rule_asset1.jpg";
+import asset2 from "../../assets/rule_asset2.jpg";
 
-const Home = () => {
+function HomePage() {
   const navigate = useNavigate();
 
+  const navigateTo = (path) => {
+    navigate(path);
+  };
+
   return (
-    <div className="home-container">
-      <h2 className="home-title">Welcome to The Great CSScape</h2>
-      <p className="home-description">
-        Embark on a journey to explore the beauty of CSS and design!
-      </p>
-      <section className="home-rules">
-        <h3 className="home-rules-title">Round 2 Rules</h3>
-        <div className="home-rule-box">
-          <div className="home-rule-boxed">
-            <p className="home-rule">
-              <span className="home-rule-highlight">/*****/</span>&lt;code&gt;
-              <span className="home-rule-highlight"> /*****/</span>
-              <code> Code within this block should not be changed.</code>
-            </p>
+    <div className="homepage-container">
+      <header className="homepage-header">
+        <h1 className="main-heading">The Great CSScape</h1>
+        <p className="sub-heading">
+          Welcome to the ultimate CSS and code challenge! Sharpen your skills,
+          follow the rules, and aim for the maximum points.
+        </p>
+      </header>
+
+      <main className="homepage-content">
+        <section className="rules-section">
+          <h2 className="section-title">Rules</h2>
+          <div className="rule-box">
+            <h1 className="rule-description">
+              If the code is enclosed like the above example, participants are
+              not allowed to edit that part of the code.
+            </h1>
+            <img
+              src={asset1}
+              alt="Rule 1 Visual"
+              className="rule-image large-image"
+            />
           </div>
-          <div className="home-rule-boxed">
-            <p className="home-rule">
-              <span className="home-rule-highlight">/*****/</span>&lt;code&gt;
-              <span className="home-rule-highlight"> /*****/</span>
-              <code> Code within this block should not be changed.</code>
-            </p>
+          <div className="rule-box">
+            <h1 className="rule-description">
+              If the code is enclosed like the above example, participants can
+              add extra code but should not remove the existing code.
+            </h1>
+            <img
+              src={asset2}
+              alt="Rule 2 Visual"
+              className="rule-image large-image"
+            />
           </div>
-          <div className="home-rule-boxed">
-            <p className="home-rule">
-              Any violation of the above rules will result in disqualification from the task.
-            </p>
+        </section>
+
+        <section className="instructions-section">
+          <h2 className="section-title">Instructions</h2>
+          <ol className="instructions-list">
+            <li>
+              Violation of the above rules leads to disqualification of that
+              task.
+            </li>
+            <li>
+              If you are less confident with error fixing, it is recommended to
+              do it last.
+            </li>
+            <li>
+              Before starting coding, go through the starter page of each
+              task carefully.
+            </li>
+            <li>Your task is to earn maximum points by solving challenges.</li>
+          </ol>
+        </section>
+
+        <section className="get-started-section">
+          <h2 className="section-title">Get Started</h2>
+          <div className="buttons-container">
+            <button
+              onClick={() => navigateTo("/error-fix-starter")}
+              className="starter-button"
+            >
+              Error Fix
+            </button>
+            <button
+              onClick={() => navigateTo("/style-starter")}
+              className="starter-button"
+            >
+              Style
+            </button>
+            <button
+              onClick={() => navigateTo("/another-starter")}
+              className="starter-button"
+            >
+              Backend
+            </button>
           </div>
-        </div>
-      </section>
-      <h3 className="home-action-title">Click on any button below to get started</h3>
-      <div className="home-buttons">
-        <button onClick={() => navigate('/style-starter')} className="home-button">
-          Styling 
-        </button>
-        <button onClick={() => navigate('/error-fix-starter')} className="home-button">
-          Fix Error
-        </button>
-        <button onClick={() => navigate('/backend-starter')} className="home-button">
-          Backend Implementation
-        </button>
-      </div>
+        </section>
+      </main>
     </div>
   );
-};
+}
 
-export default Home;
+export default HomePage;
