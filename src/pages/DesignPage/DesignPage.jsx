@@ -1,37 +1,15 @@
+/* **************************************************** start *************************************************** */
 import React, { useState } from 'react';
-// import './designPage.css';
+import './designPage.css';
 import oval from '../../assets/oval.jpg';
 import ocean from '../../assets/ocean.jpg';
+/* **************************************************** end *************************************************** */
 
 function DesignPage() {
   const [menuOpen, setMenuOpen] = useState(false);
-
+/* ----------------------------------------------------------- start ----------------------------------------------------------*/
   return (
     <div>
-      {/* Navbar */}
-      {/* <nav className="z-navbar">
-        <div className="z-container">
-          <a className="z-logo" href="index.html">THE GREAT CSSCAPE</a>
-          <div className={`z-navbar-menu ${menuOpen ? 'open' : ''}`}>
-            <ul className="z-nav-links">
-              <li className="z-nav-item"><a className="z-nav-link" href="index.html">Home</a></li>
-              <li className="z-nav-item"><a className="z-nav-link" href="about.html">About Us</a></li>
-              <li className="z-nav-item z-dropdown">
-                <a className="z-nav-link" href="#">Projects</a>
-                <ul className="z-dropdown-menu">
-                  <li><a className="z-dropdown-item" href="#">Project #1</a></li>
-                  <li><a className="z-dropdown-item" href="#">Project #2</a></li>
-                  <li><a className="z-dropdown-item" href="#">Project Demo YouTube</a></li>
-                </ul>
-              </li>
-              <li className="z-nav-item"><a className="z-nav-link" href="gallery.html">Gallery</a></li>
-              <li className="z-nav-item"><a className="z-nav-link" href="contact.html">Contact Us</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav> */}
-      {/* Navbar end */}
-
       {/* About Us section */}
       <section className="z-about-us-section">
         <div className="z-about-us-header">
@@ -90,5 +68,5 @@ function DesignPage() {
     </div>
   );
 }
-
+/* ----------------------------------------------------------- end ----------------------------------------------------------*/
 export default DesignPage;

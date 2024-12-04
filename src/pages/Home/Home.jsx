@@ -1,6 +1,6 @@
 //*****************************************************  start ***************************************************** */
 import React from "react";
-import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
+import { useNavigate } from "react-router-dom"; 
 import "./Home.css";
 import asset1 from "../../assets/rule_asset1.jpg";
 import asset2 from "../../assets/rule_asset2.jpg";
@@ -33,7 +33,7 @@ function HomePage() {
           <h2 className="section-title">Rules</h2>
           <div className="rule-box">
             <h1 className="rule-description">
-              If the code is enclosed like the above example, participants are
+              If the code is enclosed like the below example, participants are
               not allowed to edit that part of the code.
             </h1>
             <img
@@ -44,7 +44,7 @@ function HomePage() {
           </div>
           <div className="rule-box">
             <h1 className="rule-description">
-              If the code is enclosed like the above example, participants can
+              If the code is enclosed like the below example, participants can
               add extra code but should not remove the existing code.
             </h1>
             <img
@@ -76,10 +76,49 @@ function HomePage() {
   Participants are permitted to use online resources and documentation; however, the use of chatbots, such as <b>ChatGPT</b>, is strictly prohibited unless explicitly disclosed to the volunteers within two attempts. Failure to comply will result in <b>disqualification</b>.
 </li>
 
-
-
           </ol>
         </section>
+        <section className="instructions-section">
+  <h2 className="section-title">Points Division</h2>
+  <ol className="instructions-list">
+    <li>Round 1 - 30 points</li>
+    <li>
+      Round 2 - 120 points, in which 
+      
+        <p>Error Fix - 40 points</p>
+        <p>Design - 50 points (decided after the event based on perfection, alignment, sizes, and minute details)</p>
+        <p>Backend - 10+20 points</p>
+      
+    </li>
+    <li> <b>total - 150 points </b></li>
+  </ol>
+</section>
+
+<section className="instructions-section">
+  <h2 className="section-title">Submission Guidelines</h2>
+  <ol className="guidelines-list">
+    <li>
+      <strong>Round One:</strong>
+      <ul className="sub-list">
+        <li>Upload an image or PDF of the design.</li>
+        <li>
+          Submission Link: <a href="https://forms.gle/cuuxn738UaG27YZs9" target="_blank" rel="noopener noreferrer">https://forms.gle/cuuxn738UaG27YZs9</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <strong>Round Two:</strong>
+      <ul className="sub-list">
+        <li>First, upload your project to GitHub with the repository name format: <code>csscape_&lt;your-name&gt;_&lt;sl-no&gt;</code>.</li>
+        <li>Upload the repository link in the below form.</li>
+        <li>
+          Submission Link: <a href="https://forms.gle/GCX9NQDs6EbjG6Lh7" target="_blank" rel="noopener noreferrer">https://forms.gle/GCX9NQDs6EbjG6Lh7</a>
+        </li>
+      </ul>
+    </li>
+    <h3><strong>Note:</strong> Submissions or commits made after 1 PM will not be considered.</h3>
+  </ol>
+</section>
 
         <section className="get-started-section">
           <h2 className="section-title">Get Started</h2>
@@ -97,7 +136,7 @@ function HomePage() {
               Style
             </button>
             <button
-              onClick={() => navigateTo("/another-starter")}
+              onClick={() => navigateTo("/backend-starter")}
               className="starter-button"
             >
               Backend

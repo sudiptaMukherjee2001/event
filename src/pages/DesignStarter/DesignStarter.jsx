@@ -1,3 +1,4 @@
+/* **************************************************** end *************************************************** */
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./DesignStarter.css";
@@ -18,20 +19,20 @@ const DesignStarter = () => {
 <div className="image-container2">
   <img src={asset3} alt="Description" />
 </div>
-      <h1>Design Challenge: Output Page</h1>
+      <h1>Design Challenge </h1>
       
       <div className="challenge-instructions">
         <h2>Design Challenge Guidelines</h2>
-        <ol>
+        <ul>
           <li>You are <strong>only allowed</strong> to modify the <code>DesignPage.css</code> file</li>
           <li>Additional <code>&lt;div&gt;</code> elements or class names can be added to <code>DesignPage.jsx</code> if required</li>
           <li>Focus on achieving the design shown in the preview image below</li>
           <li>Pay attention to layout, color scheme, and overall composition</li>
-        </ol>
+        </ul>
       </div>
 
       <div className="design-preview">
-        <h2>Expected Design Preview</h2>
+        <h2>Expected Design Preview</h2><br></br>
         <img 
           src={expectedDesign} 
           alt="Expected Design Output" 
@@ -54,3 +55,4 @@ const DesignStarter = () => {
 };
 
 export default DesignStarter;
+/* **************************************************** end *************************************************** */
