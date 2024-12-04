@@ -4,7 +4,7 @@ import "./DesignStarter.css";
 
 // Import the expected design image
 import expectedDesign from "../../assets/expected_design.jpg";
-
+import asset3 from "../../assets/logo_dark_QmPdj9K.svg";
 const DesignStarter = () => {
   const navigate = useNavigate();
 
@@ -14,6 +14,10 @@ const DesignStarter = () => {
 
   return (
     <div className="design-starter">
+
+<div className="image-container2">
+  <img src={asset3} alt="Description" />
+</div>
       <h1>Design Challenge: Output Page</h1>
       
       <div className="challenge-instructions">

@@ -1,9 +1,10 @@
+//*****************************************************  start ***************************************************** */
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for navigation
 import "./Home.css";
 import asset1 from "../../assets/rule_asset1.jpg";
 import asset2 from "../../assets/rule_asset2.jpg";
-
+import asset3 from "../../assets/logo_dark_QmPdj9K.svg";
 function HomePage() {
   const navigate = useNavigate();
 
@@ -12,7 +13,13 @@ function HomePage() {
   };
 
   return (
+    
+
     <div className="homepage-container">
+ <div className="image-container">
+  <img src={asset3} alt="Description" />
+</div>
+
       <header className="homepage-header">
         <h1 className="main-heading">The Great CSScape</h1>
         <p className="sub-heading">
@@ -46,8 +53,8 @@ function HomePage() {
               className="rule-image large-image"
             />
           </div>
+          <p className="note">Note: If the code does not follow any of the patterns mentioned above, you are free to modify it as you wish.</p>
         </section>
-
         <section className="instructions-section">
           <h2 className="section-title">Instructions</h2>
           <ol className="instructions-list">
@@ -64,6 +71,13 @@ function HomePage() {
               task carefully.
             </li>
             <li>Your task is to earn maximum points by solving challenges.</li>
+            
+            <li>
+  Participants are permitted to use online resources and documentation; however, the use of chatbots, such as <b>ChatGPT</b>, is strictly prohibited unless explicitly disclosed to the volunteers within two attempts. Failure to comply will result in <b>disqualification</b>.
+</li>
+
+
+
           </ol>
         </section>
 
@@ -96,3 +110,4 @@ function HomePage() {
 }
 
 export default HomePage;
+//*****************************************************  end  ***************************************************** */

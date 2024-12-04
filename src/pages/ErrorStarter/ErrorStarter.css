@@ -1,5 +1,6 @@
+
 .error-fix-starter {
-  max-width: 800px;
+  width: 1100PX;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
@@ -48,4 +49,4 @@
 
 .navigate-button:hover {
   background-color: #0056b3;
-}
+}1

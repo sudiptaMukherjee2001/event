@@ -4,7 +4,7 @@ import "./ErrorStarter.css"; // Styles for the component
 
 // Import the error page image correctly
 import afterImage from '../../assets/error_page.jpg';
-
+import asset3 from "../../assets/logo_dark_QmPdj9K.svg";
 function ErrorFixStarter() {
   const navigate = useNavigate();
 
@@ -14,6 +14,9 @@ function ErrorFixStarter() {
 
   return (
     <div className="error-fix-starter">
+     <div className="image-containers">
+  <img src={asset3} alt="Description" />
+</div>
       <h1>Welcome to the Error Fix Challenge</h1>
       <p>Test your debugging skills and fix the errors to unlock the final page!</p>
       
