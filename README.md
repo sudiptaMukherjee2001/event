@@ -1,7 +1,5 @@
 # The Great Escape
 
-## Description
-An immersive escape adventure game that challenges players to navigate through complex environments and overcome strategic obstacles.
 
 ## Prerequisites
 - Node.js (v16.0+)
