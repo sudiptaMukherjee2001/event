@@ -15,11 +15,13 @@ const ProfilePage = () => {
     <div className="profile-page">
       <header className="profile-header">
         <div className="profile-header-content">
+    {/* /************************************************************* start  **************************************************************** */ }
           <img
             src={logo}
             alt="Profile"
             className="profile-image"
           />
+     {/************************************************************* end  **************************************************************** */}
           <div className="profile-header-text">
             <h1 className="profile-name">John Doe</h1>
             <h2 className="profile-title">Senior Software Engineer</h2>
@@ -30,7 +32,7 @@ const ProfilePage = () => {
             </p>
           </div>
         </div>
-      
+   /   
       <main className="profile-content">
         {/* Skills Section */}
         <section className="profile-section">

@@ -81,7 +81,7 @@ function HomePage() {
         <section className="instructions-section">
   <h2 className="section-title">Points Division</h2>
   <ol className="instructions-list">
-    <li>Round 1 - 30 points</li>
+    <li>Round 1 - 60 points</li>
     <li>
       Round 2 - 120 points, in which 
       
@@ -90,7 +90,7 @@ function HomePage() {
         <p>Backend - 10+20 points</p>
       
     </li>
-    <li> <b>total - 150 points </b></li>
+    <li> <b>total - 180 points </b></li>
   </ol>
 </section>
 
